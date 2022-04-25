@@ -43,7 +43,7 @@ try:
 	VERSION	= open("VERSION", "r").read().strip()
 except:
 	VERSION	= "unknown"
-	print("'VERSION' file not found, please re-clone : https://www.github.com/m57/piescan.git")
+	print("'VERSION' file not found, please re-clone ")
 
 VERBOSE 		= False
 VERBOSE_EXTRA 	= False
@@ -79,7 +79,7 @@ def signal_handler(sig, frame):
 def banner():
 
 	print("")
-	print("\t  %spiescan v%s%s -- %shttps://www.twitter.com/@_g0dmode%s" % ("\033[1;32m", VERSION, "\033[0m", "\033[1;31m", "\033[0m"))
+	print("\t  %spiescan v%s%s -- %shttps://github.com/krdsploit%s" % ("\033[1;32m", VERSION, "\033[0m", "\033[1;31m", "\033[0m"))
 	print("\t---------------------------------------------------")
 	print("\t    A simple, fast, lightweight TCP/UDP scanner")
 	print("")
